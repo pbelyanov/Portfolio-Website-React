@@ -1,0 +1,106 @@
+#weatherApp {
+    height: 880px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    flex-direction: column;
+
+}
+
+
+#appContainer {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    align-content: stretch;
+    background-image: url(./backgrounds/backgroundDarker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+#search {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#currentWeather {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+    width: 500px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+}
+
+
+#currentWeather img {
+    height: 150px;
+    width: 150px;
+}
+
+#currentWeatherTextBox p{
+    margin: 10px 0px;
+}
+
+#textTodayCurentWeather {
+    font-size: 24px;
+}
+
+#currentLocation {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#currentTemperature {
+    font-size: 24px;
+}
+
+.futureForecastCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.forecastTemp {
+    font-weight: 500;
+}
+
+
+#forecast {
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#forecast img{
+    height: 50px;
+    width: 50px;
+}
+
+#forecast p{
+    margin: 12px 0px;
+}
+
+

@@ -1,0 +1,53 @@
+#aboutMeSection {
+    height: 888px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url(../images/background-aboutMe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutMeSection h1 {
+    margin-top: 100px;
+    font-size: 68px;
+    color: white;
+}
+
+#mainContainer {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    width: 1020px;
+    gap: 200px;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem;
+    gap: 8px;
+    width: 320px;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+#skills div {
+    padding: 4px 8px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 26px;
+    color: white;
+    background-color: rgba(103, 103, 180, 0.2);
+}
+
+#info {
+    color: white;
+    width: 500px;
+    font-size: 28px;
+}

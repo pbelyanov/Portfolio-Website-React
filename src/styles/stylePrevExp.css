@@ -1,0 +1,71 @@
+#mainFrame {
+    /* height: 888px; */
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 400px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-image: url(../images/background-aboutMe.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+#mainFrame h1 {
+    font-size: 48px;
+}
+
+#education a {
+    text-decoration: none;
+    color: white;
+}
+
+#education a:hover {
+    cursor: pointer;
+    color: #7867b4;
+    border-bottom: 2px solid #7867b4;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#education p {
+    font-size: 20px;
+}
+
+#education h4 {
+    text-align: center;
+}
+
+#education div {
+    background-color: rgb(103, 103, 180, 0.2);
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+#professional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#professional div {
+    background-color: rgb(103, 103, 180, 0.2);
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
