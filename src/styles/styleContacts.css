@@ -1,0 +1,37 @@
+#contactSection {
+    height: 745px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 150px;
+    background-image: url(../images/background-aboutMe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contactSection h1 {
+    font-size: 48px;
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 28px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(103, 103, 180, 0.2);
+    padding: 32px 64px;
+    border-radius: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
