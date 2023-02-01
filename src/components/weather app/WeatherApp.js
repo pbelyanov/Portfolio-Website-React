@@ -25,6 +25,15 @@ export function WeatherApp(props) {
 
   if (weather.current_weather) {
     const forecastArray = [];
+    const colorArray = [
+      "rgb(65,117,229)",
+      "rgb(70,99,215)",
+      "rgb(128,181,236)",
+      "rgb(212,184,202)",
+      "rgb(148,74,71)",
+      "rgb(165,80,142)",
+      "rgb(213,106,89)",
+    ];
     for (let i = 0; i <= 6; i++) {
       const weekday = [
         "Sunday",
@@ -42,6 +51,7 @@ export function WeatherApp(props) {
         tempMax: weather.daily.temperature_2m_max[i],
         tempMin: weather.daily.temperature_2m_min[i],
         weatherCode: weather.daily.weathercode[i],
+        color: colorArray[i],
       };
       forecastArray.push(day);
     }
@@ -50,11 +60,15 @@ export function WeatherApp(props) {
       return (
         <div className="futureForecastCard">
           <p>
-            <b>{props.forecast.date}</b>
+            <b style={{ color: props.forecast.color }}>{props.forecast.date}</b>
           </p>
           <WeatherIcon weatherCode={props.forecast.weatherCode.toString()} />
-          <p className="forecastTemp">Max: {props.forecast.tempMax}&#176;</p>
-          <p className="forecastTemp">Min: {props.forecast.tempMin}&#176;</p>
+          <p className="forecastTemp" style={{ color: props.forecast.color }}>
+            Max: {props.forecast.tempMax}&#176;
+          </p>
+          <p className="forecastTemp" style={{ color: props.forecast.color }}>
+            Min: {props.forecast.tempMin}&#176;
+          </p>
         </div>
       );
     }
@@ -84,21 +98,22 @@ export function WeatherApp(props) {
     return (
       <div id="weatherApp">
         <div id="appContainer">
-          <Autocomplete
-            id="search"
-            apiKey={"AIzaSyB0n8gzIoTQy5GhbGiWZfO_aszOqWcLxY8"}
-            onPlaceSelected={searchCityCorrds}
-          />
+          <div id="top-box">
+            <p id="currentLocation">{finalName}</p>
 
+            <Autocomplete
+              id="search"
+              apiKey={"AIzaSyB0n8gzIoTQy5GhbGiWZfO_aszOqWcLxY8"}
+              onPlaceSelected={searchCityCorrds}
+            />
+          </div>
           {weather.current_weather.temperature ? (
             <div id="currentWeather">
               <WeatherIcon
                 weatherCode={weather.current_weather.weathercode.toString()}
               />
               <div id="currentWeatherTextBox">
-                <p id="textTodayCurentWeather">Today</p>
-
-                <p id="currentLocation">{finalName}</p>
+                {/* <p id="textTodayCurentWeather">Today</p> */}
 
                 <div id="currentTemperature">
                   Temperature: {weather.current_weather.temperature}&#176;
