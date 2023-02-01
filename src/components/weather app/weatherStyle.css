@@ -6,13 +6,15 @@
     padding-top: 80px;
     flex-direction: column;
     background-image: url(./backgrounds/final-background-export.png);
-
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 
 #appContainer {
     height: 500px;
-    width: 800px;
+    width: 42.03%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -27,7 +29,7 @@
 
 #top-box {
     padding-top: 59px;
-    width: 700px;
+    width: 83.35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,7 +38,7 @@
 #top-box p{
     margin: 0px;
     color: rgb(251,211,122);
-    font-size: 64px;
+    font-size: calc(64px)
 }
 
 #search {
@@ -46,12 +48,13 @@
     border: 0px;
     text-align: center;
     margin-top: 10px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #currentWeather {
     height: 93px;
-    width: 640px;
+    width: 83%;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -101,12 +104,12 @@
 
 
 #forecast {
-    padding-right: 61px;
+    padding-right: 74px;
     height: 200px;
     border-radius: 10px;
     display: flex;
     gap: 9px;
-    margin-top: 222px;
+    margin-top: 216px;
 }
 
 #forecast img{
