@@ -52,7 +52,7 @@ button {
 
 @media screen and (max-width:1366px) {
     #projectSection {
-        height: 689px;
+        height: 718px;
         background-size: 100%;
         background-repeat: no-repeat;
         width: 100%;
@@ -67,7 +67,7 @@ button {
         width: 49%;
         height: 35%;
         gap: 100px;
-        padding: 0% 1.9% 11.5% 0%;
+        padding: 0% 1.9% 13.5% 0%;
     }
 
     img {
