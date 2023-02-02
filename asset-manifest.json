@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website-React/static/css/main.ab05f5e7.css",
-    "main.js": "/Portfolio-Website-React/static/js/main.707ed235.js",
+    "main.css": "/Portfolio-Website-React/static/css/main.9e8b6b23.css",
+    "main.js": "/Portfolio-Website-React/static/js/main.409dbcc5.js",
     "static/css/96.c3218b9c.chunk.css": "/Portfolio-Website-React/static/css/96.c3218b9c.chunk.css",
     "static/js/96.fca8212b.chunk.js": "/Portfolio-Website-React/static/js/96.fca8212b.chunk.js",
-    "static/css/128.22c2b8b3.chunk.css": "/Portfolio-Website-React/static/css/128.22c2b8b3.chunk.css",
+    "static/css/128.68501859.chunk.css": "/Portfolio-Website-React/static/css/128.68501859.chunk.css",
     "static/js/128.ed589ed9.chunk.js": "/Portfolio-Website-React/static/js/128.ed589ed9.chunk.js",
     "static/css/354.ea92e12f.chunk.css": "/Portfolio-Website-React/static/css/354.ea92e12f.chunk.css",
     "static/js/354.c60b07a1.chunk.js": "/Portfolio-Website-React/static/js/354.c60b07a1.chunk.js",
@@ -28,11 +28,11 @@
     "static/media/thunderstorm-light.png": "/Portfolio-Website-React/static/media/thunderstorm-light.d1a8d01539011562c673.png",
     "static/media/sun-light.png": "/Portfolio-Website-React/static/media/sun-light.b4daf16d2fd8c7972a1a.png",
     "index.html": "/Portfolio-Website-React/index.html",
-    "main.ab05f5e7.css.map": "/Portfolio-Website-React/static/css/main.ab05f5e7.css.map",
-    "main.707ed235.js.map": "/Portfolio-Website-React/static/js/main.707ed235.js.map",
+    "main.9e8b6b23.css.map": "/Portfolio-Website-React/static/css/main.9e8b6b23.css.map",
+    "main.409dbcc5.js.map": "/Portfolio-Website-React/static/js/main.409dbcc5.js.map",
     "96.c3218b9c.chunk.css.map": "/Portfolio-Website-React/static/css/96.c3218b9c.chunk.css.map",
     "96.fca8212b.chunk.js.map": "/Portfolio-Website-React/static/js/96.fca8212b.chunk.js.map",
-    "128.22c2b8b3.chunk.css.map": "/Portfolio-Website-React/static/css/128.22c2b8b3.chunk.css.map",
+    "128.68501859.chunk.css.map": "/Portfolio-Website-React/static/css/128.68501859.chunk.css.map",
     "128.ed589ed9.chunk.js.map": "/Portfolio-Website-React/static/js/128.ed589ed9.chunk.js.map",
     "354.ea92e12f.chunk.css.map": "/Portfolio-Website-React/static/css/354.ea92e12f.chunk.css.map",
     "354.c60b07a1.chunk.js.map": "/Portfolio-Website-React/static/js/354.c60b07a1.chunk.js.map",
@@ -40,7 +40,7 @@
     "117.113c6a4c.chunk.js.map": "/Portfolio-Website-React/static/js/117.113c6a4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab05f5e7.css",
-    "static/js/main.707ed235.js"
+    "static/css/main.9e8b6b23.css",
+    "static/js/main.409dbcc5.js"
   ]
 }
