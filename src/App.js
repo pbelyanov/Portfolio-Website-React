@@ -2,9 +2,7 @@
 import "./styles/styles.css"
 import React from "react";
 import { Header } from "./components/Header.js";
-import { Main } from "./components/Main.js";
 import { Footer } from "./components/Footer";
-import { useState } from "react";
 import { HomeView } from "./components/views/HomeView";
 import { Route, Routes } from "react-router-dom";
 import { AboutMeView } from "./components/views/AboutMeView";
