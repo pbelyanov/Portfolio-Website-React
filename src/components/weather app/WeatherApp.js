@@ -105,6 +105,7 @@ export function WeatherApp(props) {
               id="search"
               apiKey={"AIzaSyB0n8gzIoTQy5GhbGiWZfO_aszOqWcLxY8"}
               onPlaceSelected={searchCityCorrds}
+              placeholder='Enter City'
             />
           </div>
           {weather.current_weather.temperature ? (

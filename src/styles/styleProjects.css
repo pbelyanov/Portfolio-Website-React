@@ -1,12 +1,13 @@
 #projectSection {
-    height: 888px;
+    aspect-ratio: 16 / 7.4;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-image: url(../images/background-projects.png);
-    background-size: cover;
-    background-repeat: repeat-x;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 #projectSection h1 {
@@ -47,4 +48,48 @@ button {
     color: white;
     padding: 4px 8px;
     border-radius: 10px;
+}
+
+@media screen and (max-width:1366px) {
+    #projectSection {
+        height: 689px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    #projectSection h1 {
+        font-size: 36px;
+        padding-right: 35px;
+        margin: 0px;
+    }
+
+    #mainContainerProjects {
+        width: 49%;
+        height: 35%;
+        gap: 100px;
+        padding: 0% 1.9% 11.5% 0%;
+    }
+
+    img {
+        height: 251px;
+        width: 100%;
+        border-radius: 5px;
+        border-radius: 10px
+    }
+
+    #img-box {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    button {
+        font-size: 30px;
+        background-color: rgba(103, 103, 180, 0.3);
+        color: white;
+        margin-top: 80px;
+        padding: 4px 8px;
+
+    }
+    
 }
