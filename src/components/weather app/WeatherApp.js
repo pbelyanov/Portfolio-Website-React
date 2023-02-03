@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  getWeather,
-  getLocation,
-  getCityName,
-  SearchComp,
-  getCity,
-} from "./util";
+import { getWeather, getLocation, getCity } from "./util";
 import { WeatherIcon } from "./WeatherIcon";
 import Autocomplete from "react-google-autocomplete";
 import { LoadingPageWeatherApp } from "./LoadingPageWeatherApp";
