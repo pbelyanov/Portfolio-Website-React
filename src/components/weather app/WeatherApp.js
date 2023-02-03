@@ -8,22 +8,28 @@ import {
 } from "./util";
 import { WeatherIcon } from "./WeatherIcon";
 import Autocomplete from "react-google-autocomplete";
+import { LoadingPageWeatherApp } from "./LoadingPageWeatherApp";
 
 import("./weatherStyle.css");
 
 export function WeatherApp(props) {
-  const [weather, changeWeather] = useState([]);
+  const [weather, changeWeather] = useState(null);
   const [cityName, changeCityName] = useState([]);
   const [coords, changeCoords] = useState(null);
-
-  getLocation(changeCoords);
+  const [isLoaded, changeLoadedStatus] = useState(false);
 
   useEffect(() => {
-    getWeather(changeWeather, coords);
-    getCity(changeCityName, coords);
+    getLocation(changeCoords);
+  }, []);
+
+  useEffect(() => {
+    if (coords) {
+      getWeather(changeWeather, coords, changeLoadedStatus);
+      getCity(changeCityName, coords);
+    }
   }, [coords]);
 
-  if (weather.current_weather) {
+  if (weather) {
     const forecastArray = [];
     const colorArray = [
       "rgb(65,117,229)",
@@ -95,40 +101,47 @@ export function WeatherApp(props) {
       return <div>Error</div>;
     }
 
-    return (
-      <div id="weatherApp">
-        <div id="appContainer">
-          <div id="top-box">
-            <p id="currentLocation">{finalName}</p>
+    if (isLoaded) {
+      return (
+        <div id="weatherApp">
+          <div id="appContainer">
+            <div id="top-box">
+              <p id="currentLocation">{finalName}</p>
 
-            <Autocomplete
-              id="search"
-              apiKey={"AIzaSyB0n8gzIoTQy5GhbGiWZfO_aszOqWcLxY8"}
-              onPlaceSelected={searchCityCorrds}
-              placeholder='Enter City'
-            />
-          </div>
-          {weather.current_weather.temperature ? (
-            <div id="currentWeather">
-              <WeatherIcon
-                weatherCode={weather.current_weather.weathercode.toString()}
+              <Autocomplete
+                id="search"
+                apiKey={"AIzaSyB0n8gzIoTQy5GhbGiWZfO_aszOqWcLxY8"}
+                onPlaceSelected={searchCityCorrds}
+                placeholder="Enter City"
               />
-              <div id="currentWeatherTextBox">
-                {/* <p id="textTodayCurentWeather">Today</p> */}
+            </div>
+            {weather.current_weather.temperature ? (
+              <div id="currentWeather">
+                <WeatherIcon
+                  weatherCode={weather.current_weather.weathercode.toString()}
+                />
+                <div id="currentWeatherTextBox">
+                  {/* <p id="textTodayCurentWeather">Today</p> */}
 
-                <div id="currentTemperature">
-                  Temperature: {weather.current_weather.temperature}&#176;
+                  <div id="currentTemperature">
+                    Temperature: {weather.current_weather.temperature}&#176;
+                  </div>
                 </div>
               </div>
+            ) : null}
+            <div id="forecast">
+              {forecastArray.map((x) => (
+                <FutureWeatherIcon
+                  forecast={x}
+                  key={x.date}
+                ></FutureWeatherIcon>
+              ))}
             </div>
-          ) : null}
-          <div id="forecast">
-            {forecastArray.map((x) => (
-              <FutureWeatherIcon forecast={x} key={x.date}></FutureWeatherIcon>
-            ))}
           </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return <LoadingPageWeatherApp />;
+    }
   }
 }
