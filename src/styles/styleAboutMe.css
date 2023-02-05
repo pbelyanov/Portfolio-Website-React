@@ -62,9 +62,10 @@
 
     #skills div {
         font-size: 18px;
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
+        width: 12.44vh;
+        height: 12.44vh;
+        /* aspect-ratio: 1/2; */
+        line-height: 12.44vh;
 
     }
 

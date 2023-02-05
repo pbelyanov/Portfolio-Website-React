@@ -35,7 +35,7 @@ export function Footer() {
         </div>
         <div id="copyrights">
           <p>
-            All Rights Reserved &copy;. Made by Petar Belyanov. Design by
+            All Rights Reserved &copy;. Made by Petar Belyanov. Design by&nbsp;
             <a
               href="https://www.linkedin.com/in/lora-antonova/"
               target="_blank"
