@@ -10,6 +10,7 @@ import { PrevExp } from "./components/views/PrevExp";
 import { Projects } from "./components/views/Projects";
 import { ContactView } from "./components/views/ContactView";
 import { WeatherApp } from "./components/weather app/WeatherApp";
+import { CalculatorApp } from "./components/calculator app/CalculatorApp";
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/prevExp' element={<PrevExp></PrevExp>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path="/projects/weatherApp" element={<WeatherApp></WeatherApp>}></Route>
+        <Route path="/projects/calculatorApp" element={<CalculatorApp></CalculatorApp>} />
         <Route path='/contacts' element={<ContactView></ContactView>}></Route>
       </Routes>
       <Footer />
