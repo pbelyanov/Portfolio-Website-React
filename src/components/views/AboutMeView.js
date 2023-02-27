@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import("../../styles/styleAboutMe.css");
 
 export function AboutMeView(props) {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import("./calcStyle.css");
 
@@ -7,19 +7,39 @@ export function CalculatorApp() {
   const [operand, changeOperand] = useState(null);
   const [secondNum, changeSecondNum] = useState("");
 
+  useEffect(() => {
+    window.addEventListener("keypress", (e) => {
+      let currentNum = e.key;
+
+      if (nums.includes(Number(currentNum)) || e.key === ".") {
+        // console.log(e.key);
+        numClicked(e.key);
+      }
+      if (e.key === "Enter") {
+        getResult();
+        console.log(firstNum, secondNum);
+      }
+    });
+  }, []);
+
   const nums = [];
   for (let i = 1; i <= 9; i++) {
     nums.push(i);
   }
-  nums.push("0");
+  nums.push(0);
   nums.push(".");
-  nums.push("=");
+
   const operands = ["+", "-", "/", "*"];
 
   function numClicked(e) {
     if (!operand) {
-      const currentResult = firstNum + e.target.innerHTML;
-      changeFirstNum(currentResult);
+      if (!nums.includes(Number(e))) {
+        const currentResult = firstNum + e.target.innerHTML;
+        changeFirstNum(currentResult);
+      } else {
+        const currentResult = firstNum + e;
+        changeFirstNum(currentResult);
+      }
     } else {
       const currentResult = secondNum + e.target.innerHTML;
       changeSecondNum(currentResult);
@@ -61,6 +81,10 @@ export function CalculatorApp() {
     changeSecondNum("");
   }
 
+  // function handleKeyPress(e) {
+  //   console.log(e.key);
+  // }
+
   return (
     <div id="calcPage">
       <div className="calcApp">
@@ -79,7 +103,9 @@ export function CalculatorApp() {
         <div className="calcButtons">
           <div className="nums">
             {nums.map((x) => (
-              <button onClick={numClicked}>{x}</button>
+              <button id={`num${x}`} onClick={numClicked} key={x}>
+                {x}
+              </button>
             ))}
           </div>
           <div className="operands">
