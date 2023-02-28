@@ -7,21 +7,6 @@ export function CalculatorApp() {
   const [operand, changeOperand] = useState(null);
   const [secondNum, changeSecondNum] = useState("");
 
-  useEffect(() => {
-    window.addEventListener("keypress", (e) => {
-      let currentNum = e.key;
-
-      if (nums.includes(Number(currentNum)) || e.key === ".") {
-        // console.log(e.key);
-        numClicked(e.key);
-      }
-      if (e.key === "Enter") {
-        getResult();
-        console.log(firstNum, secondNum);
-      }
-    });
-  }, []);
-
   const nums = [];
   for (let i = 1; i <= 9; i++) {
     nums.push(i);
@@ -33,7 +18,7 @@ export function CalculatorApp() {
 
   function numClicked(e) {
     if (!operand) {
-      if (!nums.includes(Number(e))) {
+      if (!nums.includes(Number(e)) || e !== ".") {
         const currentResult = firstNum + e.target.innerHTML;
         changeFirstNum(currentResult);
       } else {
@@ -41,8 +26,13 @@ export function CalculatorApp() {
         changeFirstNum(currentResult);
       }
     } else {
-      const currentResult = secondNum + e.target.innerHTML;
-      changeSecondNum(currentResult);
+      if (!nums.includes(Number(e))) {
+        const currentResult = secondNum + e.target.innerHTML;
+        changeSecondNum(currentResult);
+      } else {
+        const currentResult = secondNum + e;
+        changeSecondNum(currentResult);
+      }
     }
   }
 
@@ -81,12 +71,27 @@ export function CalculatorApp() {
     changeSecondNum("");
   }
 
-  // function handleKeyPress(e) {
-  //   console.log(e.key);
-  // }
+  function handleKeyPress(e) {
+    let currentNum = e.key;
+
+    if (nums.includes(Number(currentNum)) || e.key === ".") {
+      // console.log(e.key);
+      numClicked(e.key);
+    }
+    if (e.key === "Enter") {
+      getResult();
+    }
+    if (operands.includes(e.key)) {
+      if (!operand) {
+        changeOperand(e.key);
+      } else {
+        return;
+      }
+    }
+  }
 
   return (
-    <div id="calcPage">
+    <div id="calcPage" onKeyDown={handleKeyPress} tabIndex={0}>
       <div className="calcApp">
         <div className="calcScreen">
           <div id="topSide">{operand ? `${firstNum} ${operand}` : null}</div>
