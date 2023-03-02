@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio-Website-React/static/css/main.9e8b6b23.css",
-    "main.js": "/Portfolio-Website-React/static/js/main.5215b831.js",
-    "static/css/96.c3218b9c.chunk.css": "/Portfolio-Website-React/static/css/96.c3218b9c.chunk.css",
+    "main.js": "/Portfolio-Website-React/static/js/main.65dd4f38.js",
+    "static/css/96.3ada21fb.chunk.css": "/Portfolio-Website-React/static/css/96.3ada21fb.chunk.css",
     "static/js/96.fca8212b.chunk.js": "/Portfolio-Website-React/static/js/96.fca8212b.chunk.js",
-    "static/css/128.68501859.chunk.css": "/Portfolio-Website-React/static/css/128.68501859.chunk.css",
+    "static/css/128.45e49999.chunk.css": "/Portfolio-Website-React/static/css/128.45e49999.chunk.css",
     "static/js/128.ed589ed9.chunk.js": "/Portfolio-Website-React/static/js/128.ed589ed9.chunk.js",
     "static/css/354.ea92e12f.chunk.css": "/Portfolio-Website-React/static/css/354.ea92e12f.chunk.css",
     "static/js/354.c60b07a1.chunk.js": "/Portfolio-Website-React/static/js/354.c60b07a1.chunk.js",
     "static/css/117.cbc3e3d8.chunk.css": "/Portfolio-Website-React/static/css/117.cbc3e3d8.chunk.css",
     "static/js/117.113c6a4c.chunk.js": "/Portfolio-Website-React/static/js/117.113c6a4c.chunk.js",
+    "static/css/350.6681bfbb.chunk.css": "/Portfolio-Website-React/static/css/350.6681bfbb.chunk.css",
+    "static/js/350.b4628aaf.chunk.js": "/Portfolio-Website-React/static/js/350.b4628aaf.chunk.js",
     "static/media/weatherAppLogo.png": "/Portfolio-Website-React/static/media/weatherAppLogo.c6ab0fe8c5144672f3e0.png",
     "static/media/final-background-export.png": "/Portfolio-Website-React/static/media/final-background-export.a29fc4850e49e0565ecc.png",
     "static/media/background.png": "/Portfolio-Website-React/static/media/background.a320187ea7e0b16c5756.png",
@@ -29,18 +31,20 @@
     "static/media/sun-light.png": "/Portfolio-Website-React/static/media/sun-light.b4daf16d2fd8c7972a1a.png",
     "index.html": "/Portfolio-Website-React/index.html",
     "main.9e8b6b23.css.map": "/Portfolio-Website-React/static/css/main.9e8b6b23.css.map",
-    "main.5215b831.js.map": "/Portfolio-Website-React/static/js/main.5215b831.js.map",
-    "96.c3218b9c.chunk.css.map": "/Portfolio-Website-React/static/css/96.c3218b9c.chunk.css.map",
+    "main.65dd4f38.js.map": "/Portfolio-Website-React/static/js/main.65dd4f38.js.map",
+    "96.3ada21fb.chunk.css.map": "/Portfolio-Website-React/static/css/96.3ada21fb.chunk.css.map",
     "96.fca8212b.chunk.js.map": "/Portfolio-Website-React/static/js/96.fca8212b.chunk.js.map",
-    "128.68501859.chunk.css.map": "/Portfolio-Website-React/static/css/128.68501859.chunk.css.map",
+    "128.45e49999.chunk.css.map": "/Portfolio-Website-React/static/css/128.45e49999.chunk.css.map",
     "128.ed589ed9.chunk.js.map": "/Portfolio-Website-React/static/js/128.ed589ed9.chunk.js.map",
     "354.ea92e12f.chunk.css.map": "/Portfolio-Website-React/static/css/354.ea92e12f.chunk.css.map",
     "354.c60b07a1.chunk.js.map": "/Portfolio-Website-React/static/js/354.c60b07a1.chunk.js.map",
     "117.cbc3e3d8.chunk.css.map": "/Portfolio-Website-React/static/css/117.cbc3e3d8.chunk.css.map",
-    "117.113c6a4c.chunk.js.map": "/Portfolio-Website-React/static/js/117.113c6a4c.chunk.js.map"
+    "117.113c6a4c.chunk.js.map": "/Portfolio-Website-React/static/js/117.113c6a4c.chunk.js.map",
+    "350.6681bfbb.chunk.css.map": "/Portfolio-Website-React/static/css/350.6681bfbb.chunk.css.map",
+    "350.b4628aaf.chunk.js.map": "/Portfolio-Website-React/static/js/350.b4628aaf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e8b6b23.css",
-    "static/js/main.5215b831.js"
+    "static/js/main.65dd4f38.js"
   ]
 }

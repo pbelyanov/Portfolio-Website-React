@@ -92,11 +92,11 @@ export function CalcApp() {
     const newArr = firstNum.split("");
     if (newArr[0] === "-") {
       const editedNum = newArr.shift();
-      console.log(editedNum, newArr);
+
       changeFirstNum(newArr.join(""));
     } else {
       const editedNum = newArr.unshift("-");
-      console.log(editedNum, newArr);
+
       changeFirstNum(newArr.join(""));
     }
   };
@@ -110,7 +110,7 @@ export function CalcApp() {
   const del = () => {
     const newArr = firstNum.split("");
     const editedNum = newArr.pop();
-    console.log(editedNum, newArr);
+
     changeFirstNum(newArr.join(""));
   };
 
