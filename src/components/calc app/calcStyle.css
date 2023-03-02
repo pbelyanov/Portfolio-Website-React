@@ -1,0 +1,76 @@
+#calcPage {
+    width: 100%;
+    height: 880px;
+    display: flex;
+    justify-content: center;
+}
+
+#calcApp {
+    border-radius: 10px;
+    width: 20%;
+    height: 500px;
+    background-color: rgb(73, 67, 67);
+    margin-top: 5%;
+
+    box-shadow: 0px 0px 20px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+#screen {
+    height: 30%;
+    background-color: white;
+}
+
+#buttonsOfCalc {
+    height: 70%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#buttonsOfCalc a {
+    line-height: 430%;
+    width: 25%;
+    text-align: center;
+    border-color: rgb(129, 124, 124);
+    color: white;
+}
+
+#buttonsOfCalc a:hover {
+    background-color: rgb(119, 110, 110);
+    cursor: pointer;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#botOfScreen {
+    font-size: 48px;
+}
+
+#topOfScreen {
+    font-size: 24px;
+}
+
+#calcApp :nth-child(4),
+#calcApp :nth-child(8),
+#calcApp :nth-child(12),
+#calcApp :nth-child(16) {
+    background-color: rgb(81,105,79);
+}
+
+#calcApp :nth-child(20) {
+    background-color: rgb(125,75,65);
+    border-bottom-right-radius: 10px;
+}
+
+
+
